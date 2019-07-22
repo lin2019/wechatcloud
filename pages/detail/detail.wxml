@@ -1,0 +1,24 @@
+<view class="detail_wrap">
+  <view class='detail_header'>
+    <view class='song_info'>
+      <text class='song_name'>{{songInfo.name}}</text>
+      <text class='song_author'>{{songInfo.ar[0].name}}</text>
+    </view>
+    <view class='song_share'>
+      <image src='../../images/share.svg'></image>
+    </view>
+  </view>
+  <view class='detail_content'>
+    <image src="{{songInfo.al.picUrl}}" mode='widthFix'></image>
+  </view>
+  <view class='detail_set'>
+    <image src='../../images/collection.svg' mode='widthFix'></image>
+    <image src='../../images/download.svg' mode='widthFix'></image>
+    <image src='../../images/sound.svg' mode='widthFix'></image>
+    <image src='../../images/comment.svg' mode='widthFix'></image>
+    <image src='../../images/information.svg' mode='widthFix'></image>
+  </view>
+  <view class='detail_play'>
+    <audio src="{{songUrl.url}}" id='myAudio'></audio>
+  </view>
+</view>

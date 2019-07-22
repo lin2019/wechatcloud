@@ -1,0 +1,4 @@
+var getRound = function(num) {
+  return Math.round(num/10000);
+}
+module.exports.getRound = getRound;

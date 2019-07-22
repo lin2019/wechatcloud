@@ -1,0 +1,90 @@
+<wxs src="computer.wxs" module="computer" />
+<view class='music_index'>
+  <Search></Search>
+  <view class='banner_wrap'>
+    <swiper class='banner_inner' indicator-dots indicator-color="rgba(255,255,255,.3)" indicator-active-color="rgba(194,12,12,.7)" autoplay circular>
+      <swiper-item class='banner_item' wx:for="{{bannerList}}" wx:key="{{index}}">
+        <navigator class='banner_link'>
+          <image src="{{item.pic}}" mode='widthFix'></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='category_wrap'>
+    <view class='category_item'>
+      <navigator class='category_link'>
+        <view class='category_pic'>
+          <image src='../../images/calendar.svg'></image>
+        </view>
+        <view class='category_text'>每日推荐</view>
+      </navigator>
+    </view>
+    <view class='category_item'>
+      <navigator class='category_link'>
+        <view class='category_pic'>
+          <image src='../../images/songSheet.svg'></image>
+        </view>
+        <view class='category_text'>歌单</view>
+      </navigator>
+    </view>
+    <view class='category_item'>
+      <navigator class='category_link'>
+        <view class='category_pic'>
+          <image src='../../images/rankingList.svg'></image>
+        </view>
+        <view class='category_text'>排行榜</view>
+      </navigator>
+    </view>
+    <view class='category_item'>
+      <navigator class='category_link'>
+        <view class='category_pic'>
+          <image src='../../images/MV.svg'></image>
+        </view>
+        <view class='category_text'>MV</view>
+      </navigator>
+    </view>
+    <view class='category_item'>
+      <navigator class='category_link'>
+        <view class='category_pic'>
+          <image src='../../images/radioStation.svg'></image>
+        </view>
+        <view class='category_text'>电台</view>
+      </navigator>
+    </view>
+  </view>
+  <view class='recommend_wrap'>
+    <view class='recommend_tips'>
+      <text class='title'>推荐歌单</text>
+      <view class='more'>歌单广场</view>
+    </view>
+    <view class='recommend_list'>
+      <view class='recommend_item' wx:for="{{recommendSongSheet}}" wx:key="{{index}}">
+        <navigator class='recommend_link'>
+          <view class='recommend_msg'>
+            <image src="{{item.picUrl}}" mode='widthFix'></image>
+            <view class='recommend_play'>
+              <text class='fa fa-play'></text>
+              <text class='play_number'>{{computer.getRound(item.playCount)}}万</text>
+            </view>
+          </view>
+          <view class='recommend_name'>{{item.name}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class='hot_topic'>
+    <view class='hot_title'>热门话题</view>
+    <view class='hot_item' wx:for="{{hotTopic}}" wx:key="{{index}}">
+      <navigator class='hot_link'>
+        <view class='hot_pic'>
+          <image src="{{item.sharePicUrl}}" mode='widthFix'></image>
+        </view>
+        <view class='hot_info'>
+          <text class='hot_name'>#{{item.title}}#</text>
+          <text class='hot_join'>{{item.participateCount}}参与</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <Footer></Footer>
+</view>

@@ -1,0 +1,126 @@
+page{
+  padding-bottom: 100rpx;
+  padding-top: 80rpx;
+  position: relative;
+}
+.banner_link image{
+  width: 100%;
+}
+.banner_wrap{
+  background-color: #fff;
+  /* margin-top: 80rpx; */
+}
+.category_wrap{
+  height: 200rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+}
+.category_pic{
+  width: 100rpx;
+  height: 100rpx;
+  border: 1rpx solid #D53B33;
+  background-color: #D53B33;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category_pic image{
+  width: 60%;
+  height: 60%;
+}
+.category_text{
+  font-size: 28rpx;
+  color: #333;
+  margin-top: 20rpx;
+}
+.category_link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recommend_wrap{
+  padding: 30rpx 30rpx 0;
+}
+.recommend_tips{
+  display: flex;
+  justify-content: space-between;
+}
+.recommend_tips .title{
+  font-weight: bold;
+}
+.recommend_tips .more{
+  font-size: 30rpx;
+  color: #333;
+  width: 160rpx;
+  height: 50rpx;
+  border: 1rpx solid #eee;
+  border-radius: 25rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.recommend_list{
+  padding: 30rpx 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recommend_item{
+  width: 30%;
+  margin-bottom: 30rpx;
+}
+.recommend_item:nth-child(4),.recommend_item:nth-child(5),.recommend_item:nth-child(6){
+  margin-bottom: 0;
+}
+.recommend_link image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.recommend_name{
+  font-size: 26rpx;
+  color: #333;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.recommend_msg{
+  position: relative;
+}
+.recommend_play{
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+.play_number{
+  margin-left: 10rpx;
+}
+.hot_topic{
+  padding: 30rpx;
+}
+.hot_title{
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+.hot_item{
+  margin-bottom: 20rpx;
+}
+.hot_link{
+  display: flex;
+}
+.hot_pic image{
+  width: 160rpx;
+}
+.hot_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 30rpx;
+}

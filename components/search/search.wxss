@@ -1,0 +1,27 @@
+.search_wrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D53B33;
+  z-index: 100;
+}
+.search_inner{
+  width: 75%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #D53B33;
+  background-color: #fff;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.search_text{
+  margin-left: 15rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Search": "../../components/search/search",
+    "Footer": "../../components/footer/footer"
+  }
+}

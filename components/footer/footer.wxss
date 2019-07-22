@@ -1,0 +1,32 @@
+.footer_wrap{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1rpx solid #eee;
+  background-color: #fff;
+}
+.footer_link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_pic{
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_link image{
+  width: 80%;
+  height: 80%;
+}
+.footer_text{
+  font-size: 24rpx;
+  color: #000;
+}

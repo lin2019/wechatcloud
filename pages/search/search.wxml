@@ -1,0 +1,29 @@
+<view class='search_index'>
+  <view class='search_input'>
+    <view class='search_inner'>
+      <text class='fa fa-search ico'></text>
+      <input type='text' placeholder="大家都在搜" focus="true" confirm-type="search" class='search_online' value="{{searchKey}}" bindinput="searchContext"></input>
+    </view>
+    <view class='change_btn' bindtap='search'>{{searchText}}</view>
+  </view>
+  <view class='record_wrap'>
+    <view class='record_title'>
+      <text class='record_text'>搜索记录</text>
+      <text class='fa fa-trash-o' bindtap='clearRecord'></text>
+    </view>
+    <view class='record_content' wx:if="{{searchList.length > 0}}">
+      <view wx:for="{{searchList}}" wx:key="{{index}}" class='record_item' bindtap='recallKeys' data-text="{{item}}">
+        {{item}}
+      </view>
+    </view>
+    <view class='no_record' wx:else>暂无搜索记录</view>
+  </view>
+  <view class='hotSearch_wrap'>
+    <view class='hotSearch_title'>热搜榜</view>
+    <view class='hotSearch_content'>
+      <view wx:for="{{hotSearchList}}" wx:key="{{index}}" class='hotSearch_item'>
+        {{item.first}}
+      </view>
+    </view>
+  </view>
+</view>

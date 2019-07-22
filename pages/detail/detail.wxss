@@ -1,0 +1,47 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.detail_wrap{
+  padding: 30rpx;
+  background-color: #87CEFA;
+}
+.detail_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+}
+.song_share image{
+  width: 50rpx;
+}
+.song_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: #fff;
+  font-size: 36rpx;
+}
+.song_author{
+  font-size: 28rpx;
+}
+.detail_content{
+  padding: 80rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail_content image{
+  border-radius: 50%;
+}
+.detail_set{
+  padding: 30rpx 20rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150rpx;
+}
+.detail_set image{
+  width: 50rpx;
+}

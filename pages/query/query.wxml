@@ -1,0 +1,50 @@
+<view class='query_index'>
+  <Search></Search>
+  <view class='nav_wrap'>
+    <scroll-view scroll-x enable-back-to-top class='nav'>
+      <view class="scroll-view-item {{currentPage == index ? 'scroll_active' : ''}}" wx:for="{{allType}}" wx:key="{{index}}" data-id="{{item}}" bindtap='switchNav' data-current="{{index}}">
+        {{item.name}}
+      </view>
+    </scroll-view>
+  </view>
+  <view class='swiper_wrap'>
+    <swiper current="{{currentPage}}" bindchange="switchTab" style="height: {{autoHeight > defaultHeight ? autoHeight : defaultHeight}}rpx">
+      <swiper-item wx:for="{{allType}}" wx:key="{{index}}" item-id="{{item.type}}">
+        <view wx:if="{{item.type == 1}}">
+          <view class='song_item' wx:for="{{resultList}}" wx:for-item="item1" wx:for-index="index1" wx:key="`index_${index1}`" bindtap='linkToSong' data-id='{{item1.id}}'>
+            <view class='song_info'>
+              <text class='song_name'>{{item1.name}}</text>
+              <view class='song_msg'>
+                <text class='song_author'>{{item1.artists[0].name}} - </text>
+                <text class='song_Album'>{{item1.album.name}}</text>
+              </view>
+            </view>
+            <view class='song_ico'>
+              <text class='fa fa-youtube-play'></text>
+              <text class='fa fa-ellipsis-v'></text>
+            </view>
+          </view>
+        </view>
+        <view wx:elif="{{item.type == 10}}">
+          <view class='album_item' wx:for="{{resultList}}" wx:key="{{index}}" wx:for-item="item2" wx:for-index="index2" wx:key="`index_${index2}`">
+            <view class='album_pic'>
+              <image src="{{item2.picUrl}}" mode='widthFix'></image>
+            </view>
+            <view class='album_info'>
+              <text class='album_name'>{{item2.name}}</text>
+              <view>
+                <text class='album_author'>{{item2.artist.name}}</text>
+                <text class='album_data'>{{item2.publishTime}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view wx:else>2</view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='more_wrap' wx:if="{{loading}}">
+    <text class='fa fa-spinner'></text>
+  </view>
+  <Footer></Footer>
+</view>

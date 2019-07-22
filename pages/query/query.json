@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Search": "../../components/search/search",
+    "Footer": "../../components/footer/footer"
+  },
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 50
+}

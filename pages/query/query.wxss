@@ -1,0 +1,101 @@
+page{
+  padding: 80rpx 0 100rpx;
+}
+.nav{
+  white-space: nowrap;
+  background-color: #D53B33;
+}
+.swiper_wrap{
+  padding: 0 30rpx;
+}
+.scroll-view-item{
+  display: inline-block;
+  padding: 20rpx 30rpx;
+  color: #eee;
+  font-size: 32rpx;
+}
+.scroll_active{
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 1rpx solid #fff;
+}
+.song_item{
+  height: 120rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+.song_info{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: space-between;
+}
+.song_name{
+  font-size: 32rpx;
+}
+.song_author{
+  color: #00BFFF;
+  font-size: 26rpx;
+}
+.song_Album{
+  font-size: 26rpx;
+  color: #666;
+}
+.song_msg{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1;
+}
+.song_ico{
+  color: #bbb;
+  font-size: 36rpx;
+}
+.fa.fa-ellipsis-v{
+  margin-left: 40rpx;
+}
+.album_item{
+  height: 120rpx;
+  display: flex;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+.album_pic{
+  width: 20%;
+  height: 100%;
+  display: flex;
+}
+.album_pic image{
+  width: 100%;
+}
+.album_info{
+  width: 70%;
+  margin-left: 30rpx;
+  padding: 15rpx 0;
+}
+.album_name{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.more_wrap{
+  padding: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+.fa.fa-spinner{
+  animation: rotateZ 1s linear infinite;
+}
+@-webkit-keyframes rotateZ{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
